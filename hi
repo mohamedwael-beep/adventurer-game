@@ -1,0 +1,46 @@
+while True:
+    password = input('Please enter the password: ')
+    if password == 'fizzbuzz':
+        print('Correct password!')
+        break
+    else:
+        print('Incorrect password. Please try again.')
+def adventure_game():    
+    print("Welcome to the Adventure Game!")
+    print("you heard sound in the kitchen but you dont care because it was late")
+    print("What do you want to do?")
+    print("1.sleep")
+    print("2. Go to the kitchen")
+    choice = input("Enter the number of your choice: ").strip()
+    if choice == "1":
+        print(" noting happen")
+        print("\nThat's not a valid choice. Please try again.")
+        adventure_game() 
+    elif choice == "2":
+        print("\nyou see a Thief ")
+        print("1. go under the bed")
+        print("2.get anything to kill the thief ")
+    choice = input("Enter the number of your choice: ").strip()
+    if choice == "1":
+        print("\nthe theif go out and stole your expensive item ")
+        print("\nThat's not a valid choice. Please try again.")
+        adventure_game() 
+    elif choice == "2":
+        print("\nyou get a pistol")
+        print("the thief see you ")
+        print("1. let he go")
+        print("2.kill him")
+        choice = input("Enter the number of your choice: ").strip()
+    if choice == "1":
+        print("\nhe come again and kill you")
+        print("\nThat's not a valid choice. Please try again.")
+        adventure_game() 
+    elif choice == "2":
+        print("\nyou kill him")
+        print("you win the game")
+        print("1.to play again")
+        choice = input("lets play again: ").strip()
+    if choice == "1":
+         print("\nThat's not a valid choice. Please try again.")
+         adventure_game() 
+adventure_game()
